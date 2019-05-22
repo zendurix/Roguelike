@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>map_randomizer.cpp</FILENAME>
+      <LINE>117</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>map_randomizer</FUNCTION>
+    <DECORATED>?map_randomizer@@YAXPAVPlace@@H@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

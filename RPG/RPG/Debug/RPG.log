@@ -1,0 +1,16 @@
+﻿  AI.cpp
+  BSP_map_gen.cpp
+c:\users\mich1111\source\repos\rpg\rpg\bsp_map_gen.cpp(274): warning C4101: "a": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\mich1111\source\repos\rpg\rpg\bsp_map_gen.cpp(274): warning C4101: "b": lokalna zmienna, do której nie istnieje odwołanie
+c:\users\mich1111\source\repos\rpg\rpg\bsp_map_gen.cpp(501): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  CONFIGURATION.cpp
+  Character.cpp
+  GAME.cpp
+  Node.cpp
+  Place.cpp
+  RPG.cpp
+  RayTracer.cpp
+  Room.cpp
+  map_randomizer.cpp
+  Generowanie kodu...
+  RPG.vcxproj -> C:\Users\Mich1111\source\repos\RPG\Debug\RPG.exe

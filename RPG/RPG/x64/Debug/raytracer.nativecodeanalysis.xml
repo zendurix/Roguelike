@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>raytracer.cpp</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>40</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>update_view</FUNCTION>
+    <DECORATED>?update_view@@YAXPEAVPlace@@PEAVCharacter@@@Z</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>raytracer.cpp</FILENAME>
+      <LINE>55</LINE>
+      <COLUMN>44</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>draw_view_circle</FUNCTION>
+    <DECORATED>?draw_view_circle@@YAXPEAVPlace@@PEAVCharacter@@PEAV?$vector@PEAVPlace@@V?$allocator@PEAVPlace@@@std@@@std@@AEAH@Z</DECORATED>
+    <FUNCLINE>52</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>raytracer.cpp</FILENAME>
+      <LINE>162</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>trace</FUNCTION>
+    <DECORATED>?trace@@YA_NPEAVPlace@@00H@Z</DECORATED>
+    <FUNCLINE>79</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>raytracer.cpp</FILENAME>
+      <LINE>164</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>trace</FUNCTION>
+    <DECORATED>?trace@@YA_NPEAVPlace@@00H@Z</DECORATED>
+    <FUNCLINE>79</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>raytracer.cpp</FILENAME>
+      <LINE>182</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>trace</FUNCTION>
+    <DECORATED>?trace@@YA_NPEAVPlace@@00H@Z</DECORATED>
+    <FUNCLINE>79</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>raytracer.cpp</FILENAME>
+      <LINE>184</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '*' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '*' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>trace</FUNCTION>
+    <DECORATED>?trace@@YA_NPEAVPlace@@00H@Z</DECORATED>
+    <FUNCLINE>79</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>character.cpp</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'Character::level' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>Character::{ctor}</FUNCTION>
+    <DECORATED>??0Character@@QAE@HHDHHH_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PAVPlace@@PAV?$vector@PAVCharacter@@V?$allocator@PAVCharacter@@@std@@@2@@Z</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

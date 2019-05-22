@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'BSP_tree::nodes_num' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>BSP_tree::{ctor}</FUNCTION>
+    <DECORATED>??0BSP_tree@@QEAA@HH@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26495</DEFECTCODE>
+    <DESCRIPTION>Variable 'BSP_tree::root_node' is uninitialized. Always initialize a member variable (type.6).</DESCRIPTION>
+    <FUNCTION>BSP_tree::{ctor}</FUNCTION>
+    <DECORATED>??0BSP_tree@@QEAA@HH@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>161</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>BSP_tree::show_split</FUNCTION>
+    <DECORATED>?show_split@BSP_tree@@QEAAXPEAVPlace@@_N@Z</DECORATED>
+    <FUNCLINE>139</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>168</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>BSP_tree::show_split</FUNCTION>
+    <DECORATED>?show_split@BSP_tree@@QEAAXPEAVPlace@@_N@Z</DECORATED>
+    <FUNCLINE>139</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>189</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>BSP_tree::show_tree_details</FUNCTION>
+    <DECORATED>?show_tree_details@BSP_tree@@QEAAXXZ</DECORATED>
+    <FUNCLINE>173</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>241</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>6319</DEFECTCODE>
+    <DESCRIPTION>Użycie operatora przecinka w sprawdzanym wyrażeniu powoduje zignorowanie lewego argumentu, gdy nie ma to efektów ubocznych.</DESCRIPTION>
+    <FUNCTION>BSP_tree::fill_leaves_with_rooms</FUNCTION>
+    <DECORATED>?fill_leaves_with_rooms@BSP_tree@@QEAAXPEAVPlace@@PEAV?$vector@PEAVRoom@@V?$allocator@PEAVRoom@@@std@@@std@@@Z</DECORATED>
+    <FUNCLINE>193</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>264</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>BSP_tree::connect_all_rooms</FUNCTION>
+    <DECORATED>?connect_all_rooms@BSP_tree@@QEAAXPEAVPlace@@@Z</DECORATED>
+    <FUNCLINE>248</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>501</LINE>
+      <COLUMN>25</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>chceck_sizes</FUNCTION>
+    <DECORATED>?chceck_sizes@@YAXHH@Z</DECORATED>
+    <FUNCLINE>499</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>bsp_map_gen.cpp</FILENAME>
+      <LINE>502</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Arithmetic overflow: Using operator '+' on a 4 byte value and then casting the result to a 8 byte value. Cast the value to the wider type before calling operator '+' to avoid overflow (io.2).</DESCRIPTION>
+    <FUNCTION>chceck_sizes</FUNCTION>
+    <DECORATED>?chceck_sizes@@YAXHH@Z</DECORATED>
+    <FUNCLINE>499</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

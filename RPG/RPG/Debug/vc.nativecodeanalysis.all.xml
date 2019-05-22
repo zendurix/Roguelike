@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>rpg.cpp</FILENAME>
+      <LINE>41</LINE>
+      <COLUMN>4</COLUMN>
+    </SFA>
+    <DEFECTCODE>6262</DEFECTCODE>
+    <DESCRIPTION>Liczba bajtów stosu używana przez funkcję („42208”) przekracza wartość /analyze:stacksize „16384”. Rozważ przeniesienie części danych na stertę.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>41</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>rpg.cpp</FILENAME>
+      <LINE>94</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>41</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>rpg.cpp</FILENAME>
+      <LINE>192</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>ascii</FUNCTION>
+    <DECORATED>?ascii@@YAXXZ</DECORATED>
+    <FUNCLINE>186</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>c:\users\mich1111\source\repos\rpg\rpg</FILEPATH>
+      <FILENAME>rpg.cpp</FILENAME>
+      <LINE>231</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Ignorowana wartość zwrotna: „_getch”.</DESCRIPTION>
+    <FUNCTION>colors</FUNCTION>
+    <DECORATED>?colors@@YAX_N@Z</DECORATED>
+    <FUNCLINE>196</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>
