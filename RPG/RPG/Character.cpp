@@ -1,24 +1,17 @@
 #include "pch.h"
-#include <stdio.h>
-#include <string>
-#include <iostream>
-#include <vector>
-
 #include "Character.h"
-#include "CONFIGURATION.h"
-#include "Place.h"
-#include "GAME.h"
 
 
 
-Character::Character(int x1, int y1, char print_format1, int hp1, int atk1,
+
+Character::Character(int x1, int y1, char print_format1, int hp1, int strenght1,
 	 int level1, bool is_ai1, std::string name1 ,Place *field, std::vector<Character*> *enemies)
 {
 	pos_x = x1;
 	pos_y = y1;
 	print_format = print_format1;
 	hp = hp1;
-	atk = atk1;
+	strenght = strenght1;
 	int level = level1;
 	is_ai = is_ai1;
 	is_alive = true;
@@ -122,11 +115,11 @@ void Character::take_dmg(int damage, Place *field)
 
 void Character::attack(Character *defender, Place *field)
 {
-	defender->take_dmg(atk, field);
+	defender->take_dmg(strenght, field);
 	gotoxy(0, MYHEIGHT);
 	printf("                                          ");
 	gotoxy(0, MYHEIGHT);
-	std::cout << name << " hit " << defender->name << " for " << atk << " dmg"<<std::endl;
+	std::cout << name << " hit " << defender->name << " for " << strenght << " dmg"<<std::endl;
 }
   
 

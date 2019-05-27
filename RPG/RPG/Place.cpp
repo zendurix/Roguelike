@@ -56,12 +56,12 @@ void Place::print_place()
 				printf(ANSI_COLOR_RED "%c" ANSI_COLOR_RESET, print_format);
 			else
 			{
-				if (is_wall)
-					printf(ANSI_COLOR_MAGENTA "%c" ANSI_COLOR_RESET, print_format);
+				//if (is_wall)
+					//printf(ANSI_COLOR_MAGENTA "%c" ANSI_COLOR_RESET, print_format);
 				//else if (is_obstacle)
 				//	printf(ANSI_GRAY_BACKGROUND "%c" ANSI_COLOR_RESET, print_format);
 
-				else
+				//else
 					printf("%c", print_format);
 			}
 		}

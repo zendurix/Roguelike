@@ -3,6 +3,97 @@
 
 
 
+bool make_random_map_BSP(Place *field, std::vector<Room*> *rooms)
+{
+	Place *field_0 = field;
+	try
+	{
+		chceck_sizes(MAX_LEVEL, MIN_SIZE);
+	}
+	catch (const char* msg)
+	{
+		printf("\nERROR: %s\n", msg);
+		_getch();
+		return false;
+	}
+
+	BSP_tree tree(MAX_LEVEL, MIN_SIZE);
+
+	int restart_count = 0;
+	bool restart = false;
+	while (!restart)
+	{
+		try
+		{
+			tree.make_full_tree(field);
+			restart = true;
+			printf("\n SUCCES  RESTART_COUNT: %d", restart_count);
+		}
+		catch (const char* msg)
+		{
+			restart = false;
+			restart_count++;
+			for (int i = 0; i < MYHEIGHT; i++)
+				for (int j = 0; j < MYLENGTH; j++)
+				{
+					field->RESET();
+					field++;
+				}
+			rooms->clear();
+			field = field_0;
+		}
+	}
+
+	//tree.show_tree_details();
+	//tree.TEST_show_split(field_ptr);
+	tree.fill_leaves_with_rooms(field, rooms);
+	tree.connect_all_rooms(field);
+	printf("\n TREEE \n");
+	_getch();
+	GAME game;
+	game.print_field(field, true);
+	//tree.print_number_rooms();
+
+	_getch();
+	tree.~BSP_tree();
+	field = field_0;
+	return true;
+}
+
+void some_map(Place *field, int depth)
+{
+	Place *field_0 = field;
+	Place *field_next_pos = field;
+	std::vector <Room> rooms;
+
+	for (int i = 0; i < MYHEIGHT; i++)
+		for (int j = 0; j < MYLENGTH; j++, field++)
+			field->make_obstacle();   //make whole field obstacle
+	field = field_0;
+
+	Room room;
+	Room room2;
+	Room room3;
+
+	make_room("rectangle", field, 2, 2, 80, 30, &room);
+
+	make_room("circle", field, 27, 10, 5, 0, &room3);
+	make_room("line", field, 19, 13, 5, 0, NULL);
+
+	make_room("rectangle", field, 13, 6, 6, 6, &room2);
+	draw_shape("line", field, 4, 12, 6);
+	draw_shape("line", field, 7, 7, 1);
+	draw_shape("line", field, 5, 5, 1);
+	draw_shape("line", field, 8, 5, 1);
+	draw_shape("line", field, 9, 3, 1);
+	draw_shape("line", field, 4, 8, 6, 0, "vertical");
+	make_room("line", field, 12, 8, 5, 0, NULL);
+
+
+
+	field = field_0;
+}
+
 void draw_shape(std::string shape_name, Place *field, int x, int y,
 	int length1, int length2, std::string orientation, bool filled)
 {

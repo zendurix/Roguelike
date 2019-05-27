@@ -20,30 +20,37 @@ class Place;
 class Room;
 class Node;
 
-
 class BSP_tree
 {
-public:
+private:
 	const int MIN_SIZE;
 	int levelmax;
 	int nodes_num;
-
 	Node *root_node;
 	std::vector <Node*> nodes;
 	std::vector <Node*> nodes_leaves;
 	std::vector < std::vector <Node*> > nodes_by_levels[MAX_LEVEL + 1];
 
+public:
 	BSP_tree(int levelmax, int min_size);
 	~BSP_tree();
 
 	void make_full_tree(Place *main_field);
+
 	void fill_nodes_by_levels();
+
 	bool split_dungeon_BSP(Place *field, std::vector <Node*> *nodes, Node *parent, int level);
-	void show_split(Place *field, bool full = true);
+
+	void TEST_show_split(Place *field, bool full = true);
+
 	void show_tree_details();
+
 	void fill_leaves_with_rooms(Place *field, std::vector <Room*> *rooms);
+
 	void connect_all_rooms(Place *field);
+
 	void connect_2_rooms(Place *field, Place *searcher1, Place * searcher2, bool horizontal_connection);
+
 	void print_number_rooms();
 	
 

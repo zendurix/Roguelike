@@ -45,52 +45,54 @@ void AI::move_to_target(Character *ai, Character *you, Place *field)
 	int directions[8] = { 8, 9, 6, 3, 2, 1, 4, 7 };
 	int distance[8] =   { 0, 0, 0, 0, 0, 0, 0, 0 };
 
-	{
-		ai->pos_y -= 1;
-		distance[0] = distance_meter(*ai, *you);
-		ai->pos_y += 1;
+	
+	ai->pos_y -= 1;
+	distance[0] = distance_meter(*ai, *you);
+	ai->pos_y += 1;
 
-		ai->pos_y += 1;
-		distance[4] = distance_meter(*ai, *you);
-		ai->pos_y -= 1;
+	ai->pos_y += 1;
+	distance[4] = distance_meter(*ai, *you);
+	ai->pos_y -= 1;
 
-		ai->pos_x -= 1;
-		distance[6] = distance_meter(*ai, *you);
-		ai->pos_x += 1;
+	ai->pos_x -= 1;
+	distance[6] = distance_meter(*ai, *you);
+	ai->pos_x += 1;
 
-		ai->pos_x += 1;
-		distance[2] = distance_meter(*ai, *you);
-		ai->pos_x -= 1;
+	ai->pos_x += 1;
+	distance[2] = distance_meter(*ai, *you);
+	ai->pos_x -= 1;
 
-		ai->pos_y -= 1;
-		ai->pos_x += 1;
-		distance[1] = distance_meter(*ai, *you);
-		ai->pos_y += 1;
-		ai->pos_x -= 1;
+	ai->pos_y -= 1;
+	ai->pos_x += 1;
+	distance[1] = distance_meter(*ai, *you);
+	ai->pos_y += 1;
+	ai->pos_x -= 1;
 
-		ai->pos_y += 1;
-		ai->pos_x += 1;
-		distance[3] = distance_meter(*ai, *you);
-		ai->pos_y -= 1;
-		ai->pos_x -= 1;
+	ai->pos_y += 1;
+	ai->pos_x += 1;
+	distance[3] = distance_meter(*ai, *you);
+	ai->pos_y -= 1;
+	ai->pos_x -= 1;
 
-		ai->pos_y += 1;
-		ai->pos_x -= 1;
-		distance[5] = distance_meter(*ai, *you);
-		ai->pos_y -= 1;
-		ai->pos_x += 1;
+	ai->pos_y += 1;
+	ai->pos_x -= 1;
+	distance[5] = distance_meter(*ai, *you);
+	ai->pos_y -= 1;
+	ai->pos_x += 1;
 
-		ai->pos_y -= 1;
-		ai->pos_x -= 1;
-		distance[7] = distance_meter(*ai, *you);
-		ai->pos_y += 1;
-		ai->pos_x += 1;
-	}
+	ai->pos_y -= 1;
+	ai->pos_x -= 1;
+	distance[7] = distance_meter(*ai, *you);
+	ai->pos_y += 1;
+	ai->pos_x += 1;
+
 
 	ai->moved = false;
 	int best = 0;
 	while (1)
 	{
+		if (timer > 20)
+			break;
 		if (ai->moved)
 			break;
 		if (timer > 0 && !ai->moved)

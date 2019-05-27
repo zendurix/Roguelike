@@ -1,0 +1,10 @@
+
+
+TODO:
+- upgrade randomizing rooms (rooms sometimes touch each other)
+- fix draw_shape func in map_rnadomizer.cpp (change square MYHEIGHT, to rectangular MYHEIGHT_length and MYHEIGHT_width)
+- separate Character class for user, and ai classes (?)
+- ai
+- obstacles
+- eq, inv
+- more stats

@@ -1,16 +1,40 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: Katalog pośredni (x64\Debug\) zawiera pliki udostępnione z innego projektu (RPG.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
-  pch.cpp
-  BSP_map_gen.cpp
-  map_functions.cpp
-  Node.cpp
-  RayTracer.cpp
   AI.cpp
+c:\users\mich1111\source\repos\rpg\rpg\game.h(5): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\place.h(10): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  BSP_map_gen.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
   Character.cpp
-  CONFIGURATION.cpp
+c:\users\mich1111\source\repos\rpg\rpg\game.h(5): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\place.h(10): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
   GAME.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  Node.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
   Place.cpp
-  RNG.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  RayTracer.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
   Room.cpp
-  ROGUELIKE.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  SUPER_human_player.cpp
+c:\users\mich1111\source\repos\rpg\rpg\game.h(5): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\place.h(10): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  User_Classes.cpp
+c:\users\mich1111\source\repos\rpg\rpg\game.h(5): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\place.h(10): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  main.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+  map_functions.cpp
+c:\users\mich1111\source\repos\rpg\rpg\place.h(10): warning C4005: "ANSI_COLOR_RED": ponowna definicja makra
+  c:\users\mich1111\source\repos\rpg\rpg\game.h(5): note: zobacz poprzednią definicję „ANSI_COLOR_RED”
+c:\users\mich1111\source\repos\rpg\rpg\map_functions.cpp(32): warning C4101: "msg": lokalna zmienna, do której nie istnieje odwołanie
   Generowanie kodu...
   RPG.vcxproj -> C:\Users\Mich1111\source\repos\RPG\x64\Debug\ROGUELIKE_project.exe

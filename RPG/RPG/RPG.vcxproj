@@ -153,6 +153,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="BSP_map_gen.h" />
+    <ClInclude Include="ITEM.h" />
     <ClInclude Include="map_functions.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="pch.h" />
@@ -165,9 +166,12 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="RNG.h" />
     <ClInclude Include="Room.h" />
+    <ClInclude Include="SUPER_human_player.h" />
+    <ClInclude Include="User_Classes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BSP_map_gen.cpp" />
+    <ClCompile Include="ITEM.cpp" />
     <ClCompile Include="map_functions.cpp" />
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="RayTracer.cpp" />
@@ -184,7 +188,12 @@
     </ClCompile>
     <ClCompile Include="RNG.cpp" />
     <ClCompile Include="Room.cpp" />
-    <ClCompile Include="ROGUELIKE.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SUPER_human_player.cpp" />
+    <ClCompile Include="User_Classes.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -14,7 +14,7 @@ public:
 		Place *corner_ptr;
 	}Corner;
 
-	Corner cornerNW; //1               1---------------2
+	Corner cornerNW; //1			   1---------------2
 	Corner cornerNE; //2    		   |    ROOM       |
 	Corner cornerSW; //3			   |    inside     |
 	Corner cornerSE; //4			   3---------------4

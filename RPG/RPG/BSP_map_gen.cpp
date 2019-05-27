@@ -77,7 +77,7 @@ void BSP_tree::fill_nodes_by_levels()
 	}
 }
 
-// splits dungeon to random fields, using BSP tree. it returns false, when loops over 200 times
+
 bool BSP_tree::split_dungeon_BSP(Place *field, std::vector <Node*> *nodes, Node *parent, int level)
 { // field is parent->field-node
 	Place *field_0 = field;
@@ -91,13 +91,11 @@ bool BSP_tree::split_dungeon_BSP(Place *field, std::vector <Node*> *nodes, Node 
 		do 
 		{
 			y = random(parent->field_node->y + parent->height / 2 - MIN_SIZE / 2,
-				parent->field_node->y + parent->height / 2 + MIN_SIZE / 2);
+			parent->field_node->y + parent->height / 2 + MIN_SIZE / 2);
 			length1 = parent->length;
 			length2 = length1;
 			height1 = y - parent->field_node->y;
 			height2 = parent->height - height1;
-
-			//printf("\nlosu y");
 			error++;
 			if (error > 200)
 				return false;
@@ -113,8 +111,6 @@ bool BSP_tree::split_dungeon_BSP(Place *field, std::vector <Node*> *nodes, Node 
 			length2 = parent->length - length1;
 			height1 = parent->height;
 			height2 = parent->height;
-
-			//printf("\nlosu x");
 			error++;
 			if (error > 200)
 				return false;
@@ -135,8 +131,8 @@ bool BSP_tree::split_dungeon_BSP(Place *field, std::vector <Node*> *nodes, Node 
 	return true;
 }
 
-// test how split_dungeon_BSP works
-void BSP_tree::show_split(Place *field, bool full)
+
+void BSP_tree::TEST_show_split(Place *field, bool full)
 {
 	Place *field_0 = field;
 	GAME gam;
@@ -189,7 +185,7 @@ void BSP_tree::show_tree_details()
 	_getch();
 }
 
-// makes random sized and placed rooms in each leaves field of tree
+
 void BSP_tree::fill_leaves_with_rooms(Place *field, std::vector <Room*> *rooms)
 {
 	Place *field_0 = field;
@@ -204,30 +200,37 @@ void BSP_tree::fill_leaves_with_rooms(Place *field, std::vector <Room*> *rooms)
 			Room *room;
 			room = new Room;
 
-			if (nodes[i]->length > MIN_SIZE + 10)
-				length1 = random(MIN_SIZE + 4, MIN_SIZE + 8);
+			if (nodes[i]->length > MIN_SIZE + 15)
+				length1 = random(MIN_SIZE + 8, MIN_SIZE + 11);
+			else if (nodes[i]->length > MIN_SIZE + 10)
+				length1 = random(MIN_SIZE + 4, MIN_SIZE + 6);
 			else if (nodes[i]->length > MIN_SIZE + 5)
-				length1 = random(MIN_SIZE + 2, MIN_SIZE + 3);
+				length1 = random(MIN_SIZE + 2, MIN_SIZE + 2);
+			else if (nodes[i]->length > MIN_SIZE + 3)
+				length1 = random(MIN_SIZE, MIN_SIZE + 1);
 			else
 				length1 = random(MIN_SIZE - 1, MIN_SIZE);
 
 
-			if (nodes[i]->height > MIN_SIZE + 7)
-				height1 = random(MIN_SIZE + 2, MIN_SIZE + 5);
-			else if (nodes[i]->height > MIN_SIZE + 4)
+			if (nodes[i]->height > MIN_SIZE + 8)
+				height1 = random(MIN_SIZE + 2, MIN_SIZE + 4);
+			else if (nodes[i]->height > MIN_SIZE + 5)
 				height1 = random(MIN_SIZE, MIN_SIZE + 2);
 			else
 				height1 = random(MIN_SIZE - 1, MIN_SIZE);
 
+			length1--;
+			height1--;
 
-			if (nodes[i]->field_node->x + 1 < (nodes[i]->field_node->x + nodes[i]->length) - (length1 + 1))
-				x1 = random(nodes[i]->field_node->x + 1, (nodes[i]->field_node->x + nodes[i]->length) - (length1 + 1));
+
+			if (nodes[i]->field_node->x + 2 < (nodes[i]->field_node->x + nodes[i]->length) - (length1 + 2))
+				x1 = random(nodes[i]->field_node->x + 2, (nodes[i]->field_node->x + nodes[i]->length) - (length1 + 2));
 			else
 				x1 = nodes[i]->field_node->x + 1;
 
 
-			if (nodes[i]->field_node->y + 1 < (nodes[i]->field_node->y + nodes[i]->height) - (height1 + 1))
-				y1 = random(nodes[i]->field_node->y + 1, (nodes[i]->field_node->y + nodes[i]->height) - (height1 + 1));
+			if (nodes[i]->field_node->y + 2 < (nodes[i]->field_node->y + nodes[i]->height) - (height1 + 2))
+				y1 = random(nodes[i]->field_node->y + 2, (nodes[i]->field_node->y + nodes[i]->height) - (height1 + 2));
 			else
 				y1 = nodes[i]->field_node->y + 1;
 
@@ -244,7 +247,7 @@ void BSP_tree::fill_leaves_with_rooms(Place *field, std::vector <Room*> *rooms)
 	field = field_0;
 }
 
-// connect all rooms with corridors
+
 void BSP_tree::connect_all_rooms(Place *field)
 {
 	Place *searcher1 = NULL, *searcher2 = NULL;
@@ -252,11 +255,15 @@ void BSP_tree::connect_all_rooms(Place *field)
 	bool horizontal_connection;
 	bool found = false;
 	bool child;
+	int counter = 0; // to add more connections on 1. level of the tree
+	int add_connections = 3;
 
 	for (int j = levelmax; j > 0; j--)
 	{
-		for (int i = (int)pow(2, j) - 1; i < (int)pow(2, j + 1) - 2; i += 2)
+		for (int i = (int)pow(2, j) - 1; i < (int)pow(2, j + 1) - 2;
+			i += (j != 1) ? 2 :	( (counter < add_connections) ? 0 : 2))
 		{
+			counter += (j == 1) ? 1 : 0;
 			found = false;
 			while (!found)
 			{
